@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Sky Family Salon | Luxury Hair, Skin & Bridal Salon in Hazaribagh</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for realistic, clean luxury iconography -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0C1829',
+              deep: '#142236',
+              royal: '#1B304D',
+              accent: '#C5A880',
+              accentHover: '#B2946A',
+              sand: '#F7F5F0',
+              card: '#FFFFFF',
+              charcoal: '#1F2937',
+              muted: '#6B7280',
+              border: '#E8E3D9'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom subtle styling for luxury feel */
+    body {
+      background-color: #FAF8F5;
+      color: #1F2937;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .serif-display {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #DFBE8F 0%, #A88656 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C5A880, transparent);
+    }
+    /* Comparison Slider styling */
+    .comparison-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .comparison-slider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #C5A880;
+      cursor: ew-resize;
+      z-index: 20;
+    }
+    .comparison-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #0C1829;
+      border: 2px solid #C5A880;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #C5A880;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+    /* Smooth modal transition */
+    .modal-backdrop {
+      background-color: rgba(12, 24, 41, 0.75);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body class="relative min-h-screen text-slate-800 antialiased selection:bg-brand-accent selection:text-white">
+
+  <!-- Announcement Banner -->
+  <aside aria-label="Announcement" class="bg-brand-navy text-brand-sand py-2 px-4 text-xs font-medium tracking-wide border-b border-brand-royal/40">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Open Today: <strong>10:00 AM – 8:30 PM</strong> (All 7 Days)</span>
+        <span class="hidden md:inline text-brand-accent">•</span>
+        <span class="hidden md:inline text-slate-300">Near Kargil Petrol Pump, Hurhura Rd, Hazaribagh</span>
+      </div>
+      <div class="flex items-center gap-4 text-brand-sand/90">
+        <a href="tel:08839590980" class="hover:text-brand-accent transition-colors flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone text-[10px] text-brand-accent"></i> 088395 90980
+        </a>
+        <a href="https://instagram.com/blueskyfamilysalon" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition-colors flex items-center gap-1.5" aria-label="Blue Sky Salon on Instagram">
+          <i class="fa-brands fa-instagram text-brand-accent"></i> <span class="hidden xs:inline">@blueskyfamilysalon</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300 shadow-sm" id="siteHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-full bg-brand-navy flex items-center justify-center text-brand-accent border border-brand-accent/30 shadow-md group-hover:scale-105 transition-transform duration-300">
+          <i class="fa-solid fa-scissors text-lg"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="serif-display text-2xl font-bold tracking-tight text-brand-navy leading-none">BLUE SKY</span>
+          <span class="text-[10px] uppercase font-semibold tracking-[0.24em] text-brand-accent mt-0.5">Family & Bridal Salon</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#about" class="hover:text-brand-royal hover:underline underline-offset-8 transition-colors">Our Story</a>
+        <a href="#services" class="hover:text-brand-royal hover:underline underline-offset-8 transition-colors">Services & Menu</a>
+        <a href="#bridal" class="hover:text-brand-royal hover:underline underline-offset-8 transition-colors">Bridal Studio</a>
+        <a href="#transformations" class="hover:text-brand-royal hover:underline underline-offset-8 transition-colors">Real Work</a>
+        <a href="#hygiene" class="hover:text-brand-royal hover:underline underline-offset-8 transition-colors">Why Blue Sky</a>
+        <a href="#location" class="hover:text-brand-royal hover:underline underline-offset-8 transition-colors">Location</a>
+      </nav>
+
+      <!-- Action Buttons Desktop -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:08839590980" class="px-4 py-2.5 rounded-full border border-brand-navy/20 text-brand-navy text-xs font-semibold tracking-wider hover:bg-brand-sand transition-all duration-200 flex items-center gap-2">
+          <i class="fa-solid fa-phone text-brand-accent"></i>
+          <span>CALL NOW</span>
+        </a>
+        <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-full bg-brand-navy text-brand-sand text-xs font-semibold tracking-wider hover:bg-brand-royal shadow-sm hover:shadow transition-all duration-200 flex items-center gap-2">
+          <i class="fa-regular fa-calendar-check text-brand-accent"></i>
+          <span>BOOK APPOINTMENT</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-lg text-brand-navy hover:bg-slate-100 focus:outline-none" aria-label="Toggle mobile menu" id="mobileMenuBtn">
+        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-white border-b border-brand-border px-6 py-6 transition-all duration-300 shadow-xl">
+      <div class="flex flex-col space-y-4 text-base font-medium text-slate-800">
+        <a href="#about" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 flex items-center justify-between">
+          <span>Our Story</span>
+          <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#services" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 flex items-center justify-between">
+          <span>Services & Pricing</span>
+          <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#bridal" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 flex items-center justify-between">
+          <span>Bridal Makeover Studio</span>
+          <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#transformations" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 flex items-center justify-between">
+          <span>Before & After Transformations</span>
+          <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#hygiene" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 flex items-center justify-between">
+          <span>Hygiene & Quality Standards</span>
+          <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#location" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 flex items-center justify-between">
+          <span>Location & Parking</span>
+          <i class="fa-solid fa-angle-right text-xs text-slate-400"></i>
+        </a>
+        
+        <div class="pt-4 flex flex-col gap-3">
+          <button onclick="toggleMobileMenu(); openBookingModal();" class="w-full py-3.5 rounded-xl bg-brand-navy text-white text-sm font-semibold tracking-wide flex items-center justify-center gap-2 shadow-md">
+            <i class="fa-solid fa-calendar-check text-brand-accent"></i>
+            Book Instant Appointment
+          </button>
+          <a href="tel:08839590980" class="w-full py-3.5 rounded-xl border border-brand-navy text-brand-navy text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone text-brand-accent"></i>
+            Call Reception (088395 90980)
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-gradient-to-b from-[#F3EFE9] via-[#FAF8F5] to-white">
+    <!-- Subtle ambient backdrop shape -->
+    <div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-brand-accent/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-0 -ml-20 w-80 h-80 rounded-full bg-brand-royal/5 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-border text-xs font-semibold text-brand-royal tracking-wide shadow-xs mx-auto lg:mx-0">
+            <span class="w-2 h-2 rounded-full bg-brand-accent"></span>
+            <span>HAZARIBAGH'S PREMIER FAMILY & BRIDAL DESTINATION</span>
+          </div>
+
+          <h1 class="serif-display text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-medium tracking-tight text-brand-navy leading-[1.12]">
+            Look Good. <br class="hidden sm:inline" />
+            <span class="italic font-normal text-brand-royal">Feel Truly</span> Amazing.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Welcome to <strong class="font-semibold text-brand-navy">Blue Sky Family Salon</strong> — where artistic hairstyling, couture bridal artistry, and medical-grade skin therapies unite for women, men, and children in Hazaribagh.
+          </p>
+
+          <!-- Core Call to Action Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-navy hover:bg-brand-royal text-white text-sm font-semibold tracking-wider transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
+              <i class="fa-regular fa-calendar-check text-brand-accent text-base"></i>
+              <span>BOOK AN APPOINTMENT</span>
+            </button>
+            <a href="tel:08839590980" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-brand-sand border border-brand-border text-brand-navy text-sm font-semibold tracking-wider transition-all duration-300 shadow-sm flex items-center justify-center gap-3">
+              <i class="fa-solid fa-phone text-brand-accent text-base"></i>
+              <span>CALL: 088395 90980</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Row -->
+          <div class="pt-8 border-t border-brand-border/60 grid grid-cols-3 gap-3 text-left">
+            <div class="flex items-start gap-2.5">
+              <div class="w-7 h-7 rounded-full bg-brand-navy/5 flex items-center justify-center text-brand-navy shrink-0 mt-0.5">
+                <i class="fa-solid fa-spray-can-sparkles text-xs text-brand-accent"></i>
+              </div>
+              <div>
+                <p class="text-xs sm:text-sm font-bold text-brand-navy leading-snug">100% Hygienic</p>
+                <p class="text-[11px] text-slate-500">Sterilized tools & single-use capes</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-2.5">
+              <div class="w-7 h-7 rounded-full bg-brand-navy/5 flex items-center justify-center text-brand-navy shrink-0 mt-0.5">
+                <i class="fa-solid fa-award text-xs text-brand-accent"></i>
+              </div>
+              <div>
+                <p class="text-xs sm:text-sm font-bold text-brand-navy leading-snug">Top Brands</p>
+                <p class="text-[11px] text-slate-500">L'Oréal, Matrix, O3+ & Lotus</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-2.5">
+              <div class="w-7 h-7 rounded-full bg-brand-navy/5 flex items-center justify-center text-brand-navy shrink-0 mt-0.5">
+                <i class="fa-solid fa-ring text-xs text-brand-accent"></i>
+              </div>
+              <div>
+                <p class="text-xs sm:text-sm font-bold text-brand-navy leading-snug">Bridal Suite</p>
+                <p class="text-[11px] text-slate-500">Dedicated private studio for brides</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Imagery Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Hero Portrait Card -->
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" 
+                alt="Client receiving luxury salon styling at Blue Sky Family Salon" 
+                class="w-full h-[450px] object-cover object-center"
+                loading="eager"
+                onerror="this.src='https://placehold.co/800x1000/0C1829/FFFFFF?text=Blue+Sky+Family+Salon'"
+              />
+              
+              <!-- Subtle image overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent"></div>
+              
+              <!-- Floating Card on Bottom of Image -->
+              <div class="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md shadow-lg border border-white/40 flex items-center justify-between">
+                <div>
+                  <div class="flex items-center gap-1 text-amber-500 text-xs mb-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-slate-800 font-bold ml-1 text-xs">4.9 / 5.0</span>
+                  </div>
+                  <p class="text-xs text-slate-600 font-medium">Hazaribagh's Highest Rated Family Salon</p>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-brand-sand flex items-center justify-center text-brand-navy text-xs font-bold border border-brand-accent/40">
+                  BS
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Top Left -->
+            <div class="absolute -top-4 -left-4 bg-white py-2 px-3.5 rounded-lg shadow-lg border border-brand-border/60 flex items-center gap-2.5">
+              <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+              <span class="text-xs font-bold text-brand-navy tracking-tight">Hurhura Road • Open Now</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 md:py-24 bg-white border-y border-brand-border/50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-accent">Hazaribagh’s Family Care Sanctuary</span>
+      <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mt-2 mb-6">
+        Refined Craftsmanship, Personal Hospitality
+      </h2>
+      <div class="w-16 h-0.5 bg-brand-accent mx-auto mb-8"></div>
+      
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-normal">
+        Located right near <strong class="text-brand-navy font-semibold">Kargil Petrol Pump on Hurhura Road</strong>, Blue Sky Family Salon was founded with a single mission: to bring authentic luxury grooming and celebrity-grade bridal artistry to the families of Hazaribagh without the metropolitan price tag.
+      </p>
+
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 text-left">
+        <div class="p-5 rounded-2xl bg-brand-sand border border-brand-border/60">
+          <div class="serif-display text-3xl sm:text-4xl font-bold text-brand-navy mb-1">5,000+</div>
+          <p class="text-xs text-slate-600 font-medium">Satisfied Happy Clients Across Hazaribagh</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-brand-sand border border-brand-border/60">
+          <div class="serif-display text-3xl sm:text-4xl font-bold text-brand-navy mb-1">200+</div>
+          <p class="text-xs text-slate-600 font-medium">Radiant Brides Styled for Weddings & Receptions</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-brand-sand border border-brand-border/60">
+          <div class="serif-display text-3xl sm:text-4xl font-bold text-brand-navy mb-1">100%</div>
+          <p class="text-xs text-slate-600 font-medium">Authentic Branded Salon Care Products</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-brand-sand border border-brand-border/60">
+          <div class="serif-display text-3xl sm:text-4xl font-bold text-brand-navy mb-1">7 Days</div>
+          <p class="text-xs text-slate-600 font-medium">Continuous Weekly Service for Your Family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-16 md:py-24 bg-brand-sand/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-accent">Menu of Care</span>
+        <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mt-1">
+          Curated Salon Services
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3 font-normal">
+          Honest pricing, hygienic single-use kits, and personalized consultations before every appointment.
+        </p>
+
+        <!-- Service Tab Filters -->
+        <div class="flex flex-wrap justify-center gap-2 mt-8" id="serviceTabContainer">
+          <button onclick="filterServices('all')" class="service-tab-btn active px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-brand-navy text-white shadow-sm" data-category="all">
+            ALL SERVICES
+          </button>
+          <button onclick="filterServices('hair')" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-brand-border" data-category="hair">
+            HAIR CUT & STYLING
+          </button>
+          <button onclick="filterServices('skin')" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-brand-border" data-category="skin">
+            SKIN & FACIALS
+          </button>
+          <button onclick="filterServices('bridal')" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-brand-border" data-category="bridal">
+            BRIDAL & OCCASIONS
+          </button>
+          <button onclick="filterServices('men')" class="service-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-brand-border" data-category="men">
+            MEN'S GROOMING
+          </button>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+        
+        <!-- Service Card 1 -->
+        <div class="service-item bg-white p-6 rounded-2xl border border-brand-border/70 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="hair">
+          <div>
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-brand-accent">Women's Hair</span>
+                <h3 class="font-bold text-lg text-brand-navy">Signature Haircut & Blowdry</h3>
+              </div>
+              <span class="text-base font-bold text-brand-navy bg-brand-sand px-3 py-1 rounded-full shrink-0">₹450+</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">
+              Precision hair wash, deep conditioning, customized face-framing cut by senior stylist & volumizing blowout.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+              <span><i class="fa-regular fa-clock text-brand-accent mr-1"></i> 45 mins</span>
+              <span>•</span>
+              <span>Includes hair wash</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-medium text-slate-400">Walk-ins / Appt</span>
+            <button onclick="bookSpecificService('Signature Haircut & Blowdry')" class="text-xs font-bold text-brand-royal hover:text-brand-accent transition-colors flex items-center gap-1.5">
+              <span>BOOK THIS</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-item bg-white p-6 rounded-2xl border border-brand-border/70 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="hair">
+          <div>
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-brand-accent">Chemical Treatment</span>
+                <h3 class="font-bold text-lg text-brand-navy">Keratin & Botoplex Smoothening</h3>
+              </div>
+              <span class="text-base font-bold text-brand-navy bg-brand-sand px-3 py-1 rounded-full shrink-0">₹2,499+</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">
+              Frizz-free, silk-finish protein infusion using certified formaldehyde-safe formulas. Lasts 4 to 6 months.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+              <span><i class="fa-regular fa-clock text-brand-accent mr-1"></i> 2.5 - 3.5 hrs</span>
+              <span>•</span>
+              <span>L'Oréal / Matrix</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-medium text-slate-400">Consultation free</span>
+            <button onclick="bookSpecificService('Keratin & Smoothening')" class="text-xs font-bold text-brand-royal hover:text-brand-accent transition-colors flex items-center gap-1.5">
+              <span>BOOK THIS</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-item bg-white p-6 rounded-2xl border border-brand-border/70 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="skin">
+          <div>
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-brand-accent">Clinical Aesthetics</span>
+                <h3 class="font-bold text-lg text-brand-navy">O3+ Bridal Glow Luxury Facial</h3>
+              </div>
+              <span class="text-base font-bold text-brand-navy bg-brand-sand px-3 py-1 rounded-full shrink-0">₹1,799</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">
+              Multi-step skin rejuvenation with deep vacuum pore cleansing, micro-peel, brightening serum & rubber mask.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+              <span><i class="fa-regular fa-clock text-brand-accent mr-1"></i> 60 mins</span>
+              <span>•</span>
+              <span>Original O3+ Kit</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-medium text-slate-400">Instant Glow</span>
+            <button onclick="bookSpecificService('O3+ Bridal Glow Facial')" class="text-xs font-bold text-brand-royal hover:text-brand-accent transition-colors flex items-center gap-1.5">
+              <span>BOOK THIS</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-item bg-white p-6 rounded-2xl border border-brand-border/70 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="bridal">
+          <div>
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-brand-accent">Celebration</span>
+                <h3 class="font-bold text-lg text-brand-navy">HD Bridal Makeup Package</h3>
+              </div>
+              <span class="text-base font-bold text-brand-navy bg-brand-sand px-3 py-1 rounded-full shrink-0">₹7,999+</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">
+              Complete HD camera-ready makeup, luxury hair design with accessories, dupatta draping, and premium mink lashes.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+              <span><i class="fa-regular fa-clock text-brand-accent mr-1"></i> 3.5 hrs</span>
+              <span>•</span>
+              <span>Private Suite</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-medium text-slate-400">Pre-booking required</span>
+            <button onclick="bookSpecificService('HD Bridal Makeup Package')" class="text-xs font-bold text-brand-royal hover:text-brand-accent transition-colors flex items-center gap-1.5">
+              <span>BOOK THIS</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-item bg-white p-6 rounded-2xl border border-brand-border/70 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="skin">
+          <div>
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-brand-accent">Skin Therapy</span>
+                <h3 class="font-bold text-lg text-brand-navy">Lotus Herbal Anti-Tan Treatment</h3>
+              </div>
+              <span class="text-base font-bold text-brand-navy bg-brand-sand px-3 py-1 rounded-full shrink-0">₹999</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">
+              Gentle sun damage reversal, fruit enzyme de-tan pack, acupressure lymph massage and soothing hydration mist.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+              <span><i class="fa-regular fa-clock text-brand-accent mr-1"></i> 50 mins</span>
+              <span>•</span>
+              <span>Skin calming</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-medium text-slate-400">All skin types</span>
+            <button onclick="bookSpecificService('Lotus Anti-Tan Treatment')" class="text-xs font-bold text-brand-royal hover:text-brand-accent transition-colors flex items-center gap-1.5">
+              <span>BOOK THIS</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-item bg-white p-6 rounded-2xl border border-brand-border/70 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="men">
+          <div>
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="text-[11px] font-semibold tracking-wider uppercase text-brand-accent">Gentlemen</span>
+                <h3 class="font-bold text-lg text-brand-navy">Groom's Royal Cut & Beard Styling</h3>
+              </div>
+              <span class="text-base font-bold text-brand-navy bg-brand-sand px-3 py-1 rounded-full shrink-0">₹400</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-2.5 leading-relaxed">
+              Precision fade or scissor cut, hot towel straight-razor shave, beard oil contouring and relaxing head massage.
+            </p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+              <span><i class="fa-regular fa-clock text-brand-accent mr-1"></i> 40 mins</span>
+              <span>•</span>
+              <span>Hot towel therapy</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-medium text-slate-400">Walk-ins welcome</span>
+            <button onclick="bookSpecificService('Groom Cut & Beard Styling')" class="text-xs font-bold text-brand-royal hover:text-brand-accent transition-colors flex items-center gap-1.5">
+              <span>BOOK THIS</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Download Menu Note -->
+      <div class="mt-12 p-6 rounded-2xl bg-white border border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div>
+          <p class="text-sm font-bold text-brand-navy">Need full bridal packages or customized family grooming combos?</p>
+          <p class="text-xs text-slate-500 mt-0.5">We cater to pre-wedding groups, sangeet party styling, and seasonal makeovers.</p>
+        </div>
+        <button onclick="openBookingModal()" class="px-6 py-2.5 rounded-full bg-brand-navy text-brand-sand text-xs font-bold tracking-wider hover:bg-brand-royal transition-colors whitespace-nowrap">
+          REQUEST RATE CARD VIA WHATSAPP
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="bridal" class="py-16 md:py-24 bg-brand-navy text-brand-sand relative overflow-hidden">
+    <!-- Background gold sheen overlay -->
+    <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-brand-accent/15 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Bridal Story -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-brand-accent/40 text-xs font-semibold text-brand-accent tracking-widest uppercase">
+            <i class="fa-solid fa-heart text-[10px]"></i>
+            <span>Blue Sky Bridal Studio</span>
+          </div>
+
+          <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl font-medium leading-tight text-white">
+            Where Hazaribagh Brides <br class="hidden sm:inline" />
+            <span class="italic text-brand-accent font-normal">Begin Their Fairytale.</span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+            Your wedding day demands unhurried perfection. At Blue Sky, our bridal artists craft bespoke, waterproof, tear-resistant makeovers tailored to Indian wedding lighting, jewelry, and your natural complexion.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent shrink-0 mt-1">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Airbrush & Ultra HD Technology</h4>
+                <p class="text-xs text-slate-300">Flawless seamless base that stays intact for 18+ hours without oxidizing or creasing.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent shrink-0 mt-1">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Private Air-Conditioned Bridal Suite</h4>
+                <p class="text-xs text-slate-300">A peaceful, private room for the bride and her bridal party to dress and relax comfortably.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-6 h-6 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent shrink-0 mt-1">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Pre-Bridal Skincare Calendar</h4>
+                <p class="text-xs text-slate-300">Customized 30-day glow therapies including de-tan, body polishing, and hydrating peels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <button onclick="openBookingModal('Bridal Consultation')" class="px-7 py-3.5 rounded-full bg-brand-accent hover:bg-brand-accentHover text-brand-navy font-bold text-xs tracking-wider transition-all shadow-md">
+              RESERVE YOUR BRIDAL CONSULTATION
+            </button>
+            <a href="https://instagram.com/blueskyfamilysalon" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full border border-white/20 hover:bg-white/10 text-brand-sand font-semibold text-xs tracking-wider transition-all flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-brand-accent"></i>
+              SEE BRIDAL REELS
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Bridal Imagery Collage -->
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10">
+              <img 
+                src="https://images.unsplash.com/photo-1595955793665-c18c0c5fbda2?auto=format&fit=crop&w=600&q=80" 
+                alt="Traditional Indian Bridal Makeover by Blue Sky Salon" 
+                class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x600/1B304D/C5A880?text=Indian+Bride'"
+              />
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10 bg-brand-deep p-5 text-center">
+              <span class="serif-display text-2xl font-bold text-brand-accent">₹14,999</span>
+              <p class="text-xs font-semibold text-white mt-1">Complete Bridal + Sangeet Combo</p>
+              <p class="text-[11px] text-slate-300 mt-1">Includes 2 occasions & dupatta styling</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 pt-8">
+            <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10 bg-brand-deep p-5 text-center">
+              <i class="fa-solid fa-gem text-2xl text-brand-accent mb-2"></i>
+              <p class="text-xs font-semibold text-white">Trial Makeup Available</p>
+              <p class="text-[11px] text-slate-300 mt-1">Experience your look before the auspicious day</p>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10">
+              <img 
+                src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" 
+                alt="Bridal jewelry and hair styling detail" 
+                class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/600x600/1B304D/C5A880?text=Bridal+Hair'"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="transformations" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-accent">Tangible Results</span>
+        <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mt-1">
+          Hair & Beauty Transformations
+        </h2>
+        <p class="text-sm text-slate-600 mt-2 font-normal">
+          Drag the center handle horizontally to observe the real hair smoothening and tone refinement achieved at Blue Sky.
+        </p>
+      </div>
+
+      <!-- Before / After Interactive Container -->
+      <div class="max-w-3xl mx-auto bg-brand-sand rounded-3xl p-3 sm:p-5 border border-brand-border shadow-lg">
+        
+        <div class="comparison-container rounded-2xl h-[340px] sm:h-[450px] relative w-full overflow-hidden" id="beforeAfterBox">
+          
+          <!-- "AFTER" Base Image -->
+          <img 
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" 
+            alt="After Keratin Smoothening Hair Transformation" 
+            class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+            onerror="this.src='https://placehold.co/1200x800/1B304D/FFFFFF?text=After+Transformation'"
+          />
+          <div class="absolute top-4 right-4 bg-brand-navy/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider z-10">
+            AFTER (Blue Sky Keratin)
+          </div>
+
+          <!-- "BEFORE" Overlay Image with Clip Path -->
+          <div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none" id="beforeImageWrapper" style="width: 50%;">
+            <img 
+              src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1200&q=80" 
+              alt="Before Keratin Hair" 
+              class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+              style="width: 100%; max-width: none;"
+              id="beforeImgTag"
+              onerror="this.src='https://placehold.co/1200x800/94A3B8/FFFFFF?text=Before+Transformation'"
+            />
+            <div class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              BEFORE
+            </div>
+          </div>
+
+          <!-- Interactive Slider Divider -->
+          <div class="comparison-slider" id="sliderHandle" style="left: 50%;">
+            <div class="comparison-handle">
+              <i class="fa-solid fa-left-right text-xs"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Transformation caption -->
+        <div class="mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 px-2 gap-2">
+          <span>Treatment: <strong>Botoplex Ultra-Hydration + Root Gloss</strong></span>
+          <span class="text-brand-royal font-medium">Session duration: 3 hrs • Stylist: Senior Master Team</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-brand-sand/30 border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-accent">Authentic Portfolio</span>
+          <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mt-1">
+            Real Work, Real Smiles
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            No stock models. Genuine everyday haircuts, festive transformations, and bridal designs in Hazaribagh.
+          </p>
+        </div>
+        <a href="https://instagram.com/blueskyfamilysalon" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-brand-border text-xs font-bold text-brand-navy hover:text-brand-accent hover:border-brand-accent transition-all shadow-sm">
+          <i class="fa-brands fa-instagram text-base text-pink-600"></i>
+          <span>FOLLOW @BLUESKYFAMILYSALON</span>
+        </a>
+      </div>
+
+      <!-- Gallery Grid of Salon Snapshots -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <!-- Gallery 1 -->
+        <div class="group relative rounded-xl overflow-hidden bg-slate-200 aspect-square shadow-sm">
+          <img 
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" 
+            alt="Hairstyling session at Blue Sky Salon" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://placehold.co/600x600/0C1829/FFFFFF?text=Salon+Work+1'"
+          />
+          <div class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold p-4 text-center">
+            Balayage Caramel Ombre
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="group relative rounded-xl overflow-hidden bg-slate-200 aspect-square shadow-sm">
+          <img 
+            src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=600&q=80" 
+            alt="Bridal jewelry and makeup detailing" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://placehold.co/600x600/0C1829/FFFFFF?text=Salon+Work+2'"
+          />
+          <div class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold p-4 text-center">
+            Smokey Eye & Nude Lip Bridal Art
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="group relative rounded-xl overflow-hidden bg-slate-200 aspect-square shadow-sm">
+          <img 
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" 
+            alt="Men's classic beard fade styling" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://placehold.co/600x600/0C1829/FFFFFF?text=Salon+Work+3'"
+          />
+          <div class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold p-4 text-center">
+            Sharp Taper Fade & Beard Sculpt
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="group relative rounded-xl overflow-hidden bg-slate-200 aspect-square shadow-sm">
+          <img 
+            src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" 
+            alt="Facial and skin care treatment" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.src='https://placehold.co/600x600/0C1829/FFFFFF?text=Salon+Work+4'"
+          />
+          <div class="absolute inset-0 bg-brand-navy/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold p-4 text-center">
+            Hydro-Glow Deep Cleansing
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-white border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-accent">Hazaribagh Speaks</span>
+        <h2 class="serif-display text-3xl sm:text-4xl md:text-5xl font-medium text-brand-navy mt-1">
+          Words from Our Guests
+        </h2>
+        <p class="text-sm text-slate-600 mt-2 font-normal">
+          Real feedback from local residents who trust us for daily grooming and milestone occasions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="p-6 rounded-2xl bg-brand-sand/50 border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-sm text-slate-700 italic leading-relaxed">
+              "Got my wedding bridal makeup done at Blue Sky. I was honestly worried about finding someone in Hazaribagh who doesn't make foundation look cakey, but the makeup artist did such subtle, flawless HD work. It stayed fresh till the vidai next morning!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-brand-border/60 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-royal text-white flex items-center justify-center text-xs font-bold">
+              PS
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-navy">Pooja Sharma</p>
+              <p class="text-[11px] text-slate-500">Hurhura Resident • Bridal Client</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-6 rounded-2xl bg-brand-sand/50 border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-sm text-slate-700 italic leading-relaxed">
+              "Best family salon experience in the town. Very clean, polite staff, AC always working properly, and they use genuine L'Oréal products in front of you. My entire family comes here for monthly haircuts."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-brand-border/60 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-accent text-brand-navy flex items-center justify-center text-xs font-bold">
+              AK
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-navy">Amit Kumar Sinha</p>
+              <p class="text-[11px] text-slate-500">New Forest Colony • Regular Guest</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-6 rounded-2xl bg-brand-sand/50 border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-500 text-xs mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-sm text-slate-700 italic leading-relaxed">
+              "I did the Keratin treatment here last month. My dry frizzy hair is completely manageable and soft now. The pricing is very genuine compared to Ranchi salons, and the hospitality is super warm."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-brand-border/60 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-brand-navy text-white flex items-center justify-center text-xs font-bold">
+              RT
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-navy">Ritu Tiwari</p>
+              <p class="text-[11px] text-slate-500">Durgamandir Road • Keratin Service</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="location" class="py-16 md:py-24 bg-brand-sand/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Address Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-brand-accent">Easy to Reach</span>
+          <h2 class="serif-display text-3xl sm:text-4xl font-medium text-brand-navy">
+            Visit Our Salon in Hazaribagh
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed font-normal">
+            Conveniently situated right next to Kargil Petrol Pump along Hurhura Road, with easy access and dedicated two-wheeler and four-wheeler parking space for salon visitors.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-navy shrink-0 shadow-xs">
+                <i class="fa-solid fa-location-dot text-brand-accent"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Exact Address</p>
+                <p class="text-sm font-semibold text-brand-navy mt-0.5">
+                  Kargil Petrol Pump, Hurhura Road, Durgamandir,<br />
+                  New Forest Colony, Hazaribagh, Jharkhand 825301
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-navy shrink-0 shadow-xs">
+                <i class="fa-regular fa-clock text-brand-accent"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Salon Timings</p>
+                <p class="text-sm font-semibold text-brand-navy mt-0.5">
+                  Monday to Sunday: 10:00 AM – 8:30 PM <br />
+                  <span class="text-xs font-normal text-emerald-600">No lunch closure • Continuous service</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-navy shrink-0 shadow-xs">
+                <i class="fa-solid fa-phone text-brand-accent"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Direct Contact & WhatsApp</p>
+                <p class="text-sm font-semibold text-brand-navy mt-0.5">
+                  <a href="tel:08839590980" class="hover:text-brand-accent transition-colors">088395 90980</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-2">
+            <a 
+              href="https://maps.google.com/?q=Blue+Sky+Family+Salon+Kargil+Petrol+Pump+Hurhura+Road+Hazaribagh+Jharkhand" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-brand-navy hover:bg-brand-royal text-white text-xs font-bold tracking-wider transition-all shadow-md"
+            >
+              <i class="fa-solid fa-diamond-turn-right text-brand-accent text-sm"></i>
+              <span>GET DIRECTIONS ON GOOGLE MAPS</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Styled Visual Box -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-3 border border-brand-border shadow-xl overflow-hidden relative">
+            
+            <!-- Map Container Preview -->
+            <div class="relative w-full h-[360px] sm:h-[420px] rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center">
+              
+              <!-- Clean OpenStreetMap Embed / Realistic interactive iframe -->
+              <iframe 
+                class="w-full h-full border-0 grayscale-[25%] contrast-[1.05]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.721669460295!2d85.3582455!3d23.9878201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f49c0d38b695cb%3A0x7d6a5ff326e5e800!2sHazaribagh%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                title="Blue Sky Family Salon Hazaribagh location map"
+                loading="lazy" 
+                allowfullscreen>
+              </iframe>
+
+              <!-- Floating interactive badge over map -->
+              <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-4 py-3 rounded-xl shadow-lg border border-brand-border max-w-xs text-left">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-2.5 h-2.5 rounded-full bg-brand-navy"></span>
+                  <span class="text-xs font-bold text-brand-navy">Landmark: Kargil Petrol Pump</span>
+                </div>
+                <p class="text-[11px] text-slate-500">Hurhura Road, near Durgamandir temple arch.</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Appointment Booking Modal Dialog -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 modal-backdrop overflow-y-auto">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-brand-border p-6 sm:p-8 my-8 text-left transition-all transform duration-300">
+      
+      <!-- Close Button -->
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-colors" aria-label="Close modal">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <!-- Modal Title -->
+      <div class="mb-6">
+        <span class="text-[11px] font-bold tracking-widest uppercase text-brand-accent">Hassle-Free Booking</span>
+        <h3 class="serif-display text-2xl sm:text-3xl font-bold text-brand-navy mt-1">Book an Appointment</h3>
+        <p class="text-xs text-slate-500 mt-1">Direct confirmation via WhatsApp with salon receptionist.</p>
+      </div>
+
+      <!-- Booking Form -->
+      <form id="appointmentForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        
+        <div>
+          <label for="clientName" class="block text-xs font-semibold text-slate-700 mb-1">Your Full Name *</label>
+          <input 
+            type="text" 
+            id="clientName" 
+            required 
+            placeholder="e.g. Priya Singh or Rajesh Verma" 
+            class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-navy focus:ring-1 focus:ring-brand-navy bg-slate-50/50"
+          />
+        </div>
+
+        <div>
+          <label for="clientPhone" class="block text-xs font-semibold text-slate-700 mb-1">Phone / WhatsApp Number *</label>
+          <input 
+            type="tel" 
+            id="clientPhone" 
+            required 
+            placeholder="10-digit mobile number" 
+            class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-navy focus:ring-1 focus:ring-brand-navy bg-slate-50/50"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="serviceCategory" class="block text-xs font-semibold text-slate-700 mb-1">Desired Service *</label>
+            <select 
+              id="serviceCategory" 
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-navy focus:ring-1 focus:ring-brand-navy bg-slate-50/50"
+            >
+              <option value="Haircut & Styling">Haircut & Styling</option>
+              <option value="Keratin / Smoothening">Keratin / Smoothening</option>
+              <option value="O3+ Facial / Skin Treatment">O3+ Facial / Skin Treatment</option>
+              <option value="Bridal Makeover Consultation">Bridal Makeover Consultation</option>
+              <option value="Party Makeup & Draping">Party Makeup & Draping</option>
+              <option value="Men's Hair & Beard Grooming">Men's Hair & Beard Grooming</option>
+              <option value="Other Service">Other Consultation</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="preferredDate" class="block text-xs font-semibold text-slate-700 mb-1">Preferred Date *</label>
+            <input 
+              type="date" 
+              id="preferredDate" 
+              required 
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-navy focus:ring-1 focus:ring-brand-navy bg-slate-50/50"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="preferredTime" class="block text-xs font-semibold text-slate-700 mb-1">Preferred Time Slot *</label>
+          <select 
+            id="preferredTime" 
+            class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-navy focus:ring-1 focus:ring-brand-navy bg-slate-50/50"
+          >
+            <option value="Morning (10:00 AM - 12:00 PM)">Morning (10:00 AM - 12:00 PM)</option>
+            <option value="Afternoon (12:00 PM - 03:00 PM)">Afternoon (12:00 PM - 03:00 PM)</option>
+            <option value="Late Afternoon (03:00 PM - 05:30 PM)">Late Afternoon (03:00 PM - 05:30 PM)</option>
+            <option value="Evening (05:30 PM - 08:00 PM)">Evening (05:30 PM - 08:00 PM)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="specialNotes" class="block text-xs font-semibold text-slate-700 mb-1">Special Request or Notes (Optional)</label>
+          <textarea 
+            id="specialNotes" 
+            rows="2" 
+            placeholder="Any specific hairstyle, wedding date, or skin allergy note..."
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-navy focus:ring-1 focus:ring-brand-navy bg-slate-50/50 resize-none"
+          ></textarea>
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full py-4 rounded-xl bg-brand-navy hover:bg-brand-royal text-white font-bold text-xs tracking-wider transition-all duration-200 shadow-lg flex items-center justify-center gap-2 mt-2"
+        >
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+          <span>CONFIRM APPOINTMENT ON WHATSAPP</span>
+        </button>
+
+        <p class="text-[11px] text-center text-slate-400 mt-2">
+          Or call our reception directly at <a href="tel:08839590980" class="text-brand-navy underline font-bold">088395 90980</a>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toastNotification" class="fixed bottom-24 right-5 z-50 hidden bg-brand-navy text-white px-5 py-3 rounded-xl shadow-2xl border border-brand-accent/40 text-xs items-center gap-3">
+    <i class="fa-solid fa-circle-check text-brand-accent text-sm"></i>
+    <span id="toastMessage">Appointment details created!</span>
+  </div>
+
+  <footer class="bg-brand-navy text-brand-sand pt-16 pb-28 md:pb-16 border-t border-brand-royal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-brand-royal/60">
+        
+        <!-- Salon Identity Column -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-royal flex items-center justify-center text-brand-accent border border-brand-accent/40 shadow-xs">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <div>
+              <span class="serif-display text-2xl font-bold tracking-tight text-white leading-none block">BLUE SKY</span>
+              <span class="text-[9px] uppercase font-semibold tracking-[0.22em] text-brand-accent">Family & Bridal Salon</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Hazaribagh's trusted family salon offering specialized bridal makeovers, modern chemical treatments, hair design, and clinical skin rejuvenation in a hygienic ambience.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/blueskyfamilysalon" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-brand-accent hover:text-brand-navy text-slate-300 flex items-center justify-center transition-colors" aria-label="Instagram">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="tel:08839590980" class="w-9 h-9 rounded-full bg-white/5 hover:bg-brand-accent hover:text-brand-navy text-slate-300 flex items-center justify-center transition-colors" aria-label="Call">
+              <i class="fa-solid fa-phone text-xs"></i>
+            </a>
+            <a href="https://wa.me/918839590980" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 hover:bg-brand-accent hover:text-brand-navy text-slate-300 flex items-center justify-center transition-colors" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold tracking-widest uppercase text-brand-accent">Quick Links</h4>
+          <ul class="space-y-2 text-xs text-slate-300 font-medium">
+            <li><a href="#about" class="hover:text-brand-accent transition-colors">Our Story</a></li>
+            <li><a href="#services" class="hover:text-brand-accent transition-colors">Hair & Skin Menu</a></li>
+            <li><a href="#bridal" class="hover:text-brand-accent transition-colors">Bridal Studio</a></li>
+            <li><a href="#transformations" class="hover:text-brand-accent transition-colors">Transformations</a></li>
+            <li><a href="#location" class="hover:text-brand-accent transition-colors">Find Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Services List -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold tracking-widest uppercase text-brand-accent">Specialized Care</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li>• HD Bridal & Reception Makeups</li>
+            <li>• Keratin & Protein Hair Botoplex</li>
+            <li>• Global Hair Color & Highlights</li>
+            <li>• O3+ & Lotus Anti-Tan Facials</li>
+            <li>• Groom Styling & Beard Reshaping</li>
+            <li>• Kids Hairstyling with Gentle Care</li>
+          </ul>
+        </div>
+
+        <!-- Visit Info -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold tracking-widest uppercase text-brand-accent">Salon Visit</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Near Kargil Petrol Pump, Hurhura Road, Durgamandir, New Forest Colony, Hazaribagh, Jharkhand 825301
+          </p>
+          <p class="text-xs text-slate-300">
+            <strong>Timings:</strong> 10:00 AM – 8:30 PM (Daily)
+          </p>
+          <p class="text-xs text-slate-300">
+            <strong>Appointment Line:</strong> <a href="tel:08839590980" class="text-brand-accent hover:underline">088395 90980</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal and Developer Attribution -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4 text-center sm:text-left">
+        <div>
+          © 2026 Blue Sky Family Salon, Hazaribagh. All Rights Reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <span class="hover:text-slate-300">100% Verified Quality</span>
+          <span>•</span>
+          <span class="hover:text-slate-300">Safety & Hygiene Protocol</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Mobile Action Bar (Crucial for mobile conversions) -->
+  <aside aria-label="Quick Actions" class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-brand-border p-3 sm:hidden shadow-2xl flex items-center gap-2.5">
+    <a 
+      href="tel:08839590980" 
+      class="flex-1 py-3 px-3 rounded-xl border border-brand-navy text-brand-navy text-xs font-bold tracking-wide flex items-center justify-center gap-2 active:bg-slate-100"
+    >
+      <i class="fa-solid fa-phone text-brand-accent"></i>
+      <span>Call Salon</span>
+    </a>
+    
+    <button 
+      onclick="openBookingModal()" 
+      class="flex-1 py-3 px-3 rounded-xl bg-brand-navy text-white text-xs font-bold tracking-wide flex items-center justify-center gap-2 shadow-md active:bg-brand-royal"
+    >
+      <i class="fa-regular fa-calendar-check text-brand-accent"></i>
+      <span>Book Now</span>
+    </button>
+
+    <a 
+      href="https://wa.me/918839590980?text=Hello%20Blue%20Sky%20Family%20Salon,%20I%20would%20like%20to%20enquire%20about%20an%20appointment." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="w-12 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg shadow-md active:bg-emerald-700"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </aside>
+
+  <script>
+    // 1. Mobile Drawer Navigation Toggle
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      const icon = document.getElementById('menuIcon');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        drawer.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    // 2. Service Tab Filter
+    function filterServices(category) {
+      // Update Tab Styles
+      const buttons = document.querySelectorAll('.service-tab-btn');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.className = "service-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-brand-navy text-white shadow-sm";
+        } else {
+          btn.className = "service-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-white text-slate-700 hover:bg-slate-100 border border-brand-border";
+        }
+      });
+
+      // Filter Item Cards
+      const items = document.querySelectorAll('.service-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // 3. Modal Booking Operations
+    const bookingModal = document.getElementById('bookingModal');
+    const serviceSelect = document.getElementById('serviceCategory');
+    const preferredDateInput = document.getElementById('preferredDate');
+
+    // Set today's date as min
+    if (preferredDateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      preferredDateInput.min = today;
+      preferredDateInput.value = today;
+    }
+
+    function openBookingModal(preselectedService = null) {
+      bookingModal.classList.remove('hidden');
+      bookingModal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+
+      if (preselectedService && serviceSelect) {
+        let found = false;
+        for (let i = 0; i < serviceSelect.options.length; i++) {
+          if (serviceSelect.options[i].text.toLowerCase().includes(preselectedService.toLowerCase())) {
+            serviceSelect.selectedIndex = i;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          serviceSelect.value = "Other Service";
+        }
+      }
+    }
+
+    function closeBookingModal() {
+      bookingModal.classList.add('hidden');
+      bookingModal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        closeBookingModal();
+      }
+    });
+
+    function bookSpecificService(serviceName) {
+      openBookingModal(serviceName);
+    }
+
+    // 4. Form Submission and WhatsApp Pre-fill Generation
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('clientName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+      const service = document.getElementById('serviceCategory').value;
+      const date = document.getElementById('preferredDate').value;
+      const slot = document.getElementById('preferredTime').value;
+      const notes = document.getElementById('specialNotes').value.trim();
+
+      if (!name || !phone) {
+        showToast("Please provide your name and phone number.");
+        return;
+      }
+
+      // Generate polite WhatsApp message
+      const whatsappMessage = `*New Appointment Request - Blue Sky Family Salon (Hazaribagh)*%0A%0A` +
+        `👤 *Client Name:* ${encodeURIComponent(name)}%0A` +
+        `📞 *Contact:* ${encodeURIComponent(phone)}%0A` +
+        `✂️ *Service:* ${encodeURIComponent(service)}%0A` +
+        `📅 *Date:* ${encodeURIComponent(date)}%0A` +
+        `⏰ *Time Slot:* ${encodeURIComponent(slot)}` +
+        (notes ? `%0A📝 *Notes:* ${encodeURIComponent(notes)}` : '') +
+        `%0A%0A_Please confirm availability and salon stylist slot._`;
+
+      const salonWhatsAppURL = `https://wa.me/918839590980?text=${whatsappMessage}`;
+
+      showToast("Redirecting to WhatsApp to send booking details...");
+      
+      setTimeout(() => {
+        window.open(salonWhatsAppURL, '_blank');
+        closeBookingModal();
+        document.getElementById('appointmentForm').reset();
+      }, 700);
+    }
+
+    // 5. Toast Notification System (replaces alert)
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.innerText = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 4000);
+    }
+
+    // 6. Interactive Before / After Comparison Slider Logic
+    const container = document.getElementById('beforeAfterBox');
+    const beforeWrapper = document.getElementById('beforeImageWrapper');
+    const sliderHandle = document.getElementById('sliderHandle');
+    let isDragging = false;
+
+    function updateSliderPosition(clientX) {
+      if (!container) return;
+      const rect = container.getBoundingClientRect();
+      let offsetX = clientX - rect.left;
+      
+      // Clamp values between 5% and 95%
+      const minX = rect.width * 0.05;
+      const maxX = rect.width * 0.95;
+      if (offsetX < minX) offsetX = minX;
+      if (offsetX > maxX) offsetX = maxX;
+
+      const percentage = (offsetX / rect.width) * 100;
+      beforeWrapper.style.width = `${percentage}%`;
+      sliderHandle.style.left = `${percentage}%`;
+    }
+
+    if (container) {
+      container.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        updateSliderPosition(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        updateSliderPosition(e.clientX);
+      });
+
+      // Mobile Touch Support
+      container.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        if (e.touches[0]) updateSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        if (e.touches[0]) updateSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+    }
+
+    // Header subtle elevation on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('siteHeader');
+      if (window.scrollY > 20) {
+        header.classList.add('shadow-md');
+      } else {
+        header.classList.remove('shadow-md');
+      }
+    });
+  </script>
+</body>
+</html>
